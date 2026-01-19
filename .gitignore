@@ -1,0 +1,24 @@
+# Build folders
+build/
+Build/
+cmake-build-*/
+
+# Qt / CMake junk
+.qtcreator
+.cmake
+.ninja*
+CMakeCache.txt
+CMakeFiles/
+
+# Binaries
+*.exe
+*.dll
+*.lib
+*.obj
+
+# Archives
+*.zip
+
+# OS-specific
+.DS_Store
+Thumbs.db
