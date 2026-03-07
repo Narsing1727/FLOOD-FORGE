@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>intro_window</class>
+ <widget class="QMainWindow" name="intro_window">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1100</width>
+    <height>650</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>FloodForge — AI Flood Simulation System</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QMainWindow { background-color: #080c12; }</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">QWidget#centralwidget { background-color: #080c12; }</string>
+   </property>
+   <layout class="QHBoxLayout" name="mainLayout">
+    <property name="spacing"><number>0</number></property>
+    <property name="leftMargin"><number>0</number></property>
+    <property name="topMargin"><number>0</number></property>
+    <property name="rightMargin"><number>0</number></property>
+    <property name="bottomMargin"><number>0</number></property>
+
+    <item>
+     <widget class="QLabel" name="bannerLabel">
+      <property name="minimumSize">
+       <size><width>660</width><height>650</height></size>
+      </property>
+      <property name="maximumSize">
+       <size><width>660</width><height>650</height></size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel#bannerLabel { background-color: #0a0f18; border-right: 1px solid #1a2a3a; }</string>
+      </property>
+      <property name="pixmap">
+       <pixmap>C:/Users/Lenovo/Desktop/ChatGPT Image Mar 5, 2026, 08_39_02 PM.png</pixmap>
+      </property>
+      <property name="scaledContents"><bool>true</bool></property>
+      <property name="alignment"><set>Qt::AlignmentFlag::AlignCenter</set></property>
+     </widget>
+    </item>
+
+    <item>
+     <widget class="QFrame" name="rightPanel">
+      <property name="styleSheet">
+       <string notr="true">QFrame#rightPanel { background-color: #080c12; }</string>
+      </property>
+      <layout class="QVBoxLayout" name="rightLayout">
+       <property name="spacing"><number>0</number></property>
+       <property name="leftMargin"><number>36</number></property>
+       <property name="topMargin"><number>44</number></property>
+       <property name="rightMargin"><number>36</number></property>
+       <property name="bottomMargin"><number>36</number></property>
+
+       <item>
+        <widget class="QLabel" name="badgeLabel">
+         <property name="text"><string>● SYSTEM READY</string></property>
+         <property name="maximumSize"><size><width>140</width><height>30</height></size></property>
+         <property name="styleSheet">
+          <string notr="true">QLabel { color: #00e5ff; font-size: 10px; font-weight: bold; letter-spacing: 3px; background-color: rgba(0,229,255,18); border: 1px solid rgba(0,229,255,60); border-radius: 4px; padding: 5px 10px; }</string>
+         </property>
+        </widget>
+       </item>
+
+       <item>
+        <spacer name="sp1">
+         <property name="orientation"><enum>Qt::Orientation::Vertical</enum></property>
+         <property name="sizeHint" stdset="0"><size><width>0</width><height>18</height></size></property>
+        </spacer>
+       </item>
+
+       <item>
+        <widget class="QLabel" name="titleLabel">
+         <property name="text"><string>FLOODFORGE</string></property>
+         <property name="styleSheet">
+          <string notr="true">QLabel { color: #ffffff; font-size: 40px; font-weight: 900; letter-spacing: 5px; }</string>
+         </property>
+        </widget>
+       </item>
+
+       <item>
+        <widget class="QLabel" name="subtitleLabel">
+         <property name="text"><string>AI FLOOD SIMULATION SYSTEM</string></property>
+         <property name="styleSheet">
+          <string notr="true">QLabel { color: #2979ff; font-size: 11px; font-weight: bold; letter-spacing: 4px; margin-top: 4px; }</string>
+         </property>
+        </widget>
+       </item>
+
+       <item>
+        <widget class="QFrame" name="accentLine">
+         <property name="minimumSize"><size><width>0</width><height>2</height></size></property>
+         <property name="maximumSize"><size><width>16777215</width><height>2</height></size></property>
+         <property name="styleSheet">
+          <string notr="true">QFrame { background: qlineargradient(x1:0,y1:0,x2:1,y2:0, stop:0 #2979ff, stop:0.6 #00e5ff, stop:1 transparent); border: none; margin-top: 14px; margin-bottom: 14px; }</string>
+         </property>
+        </widget>
+       </item>
+
+       <item>
+        <widget class="QLabel" name="descLabel">
+         <property name="text"><string>Real-time flood propagation modeling powered by machine learning and hydrodynamic physics simulation.</string></property>
+         <property name="wordWrap"><bool>true</bool></property>
+         <property name="styleSheet">
+          <string notr="true">QLabel { color: #3d6080; font-size: 12px; }</string>
+         </property>
+        </widget>
+       </item>
+
+       <item>
+        <spacer name="sp2">
+         <property name="orientation"><enum>Qt::Orientation::Vertical</enum></property>
+         <property name="sizeHint" stdset="0"><size><width>0</width><height>16</height></size></property>
+        </spacer>
+       </item>
+
+       <item>
+        <widget class="QFrame" name="statsFrame">
+         <property name="styleSheet">
+          <string notr="true">QFrame#statsFrame { background-color: rgba(41,121,255,15); border: 1px solid rgba(41,121,255,50); border-radius: 8px; }</string>
+         </property>
+         <layout class="QHBoxLayout" name="statsLayout">
+          <property name="leftMargin"><number>12</number></property>
+          <property name="topMargin"><number>14</number></property>
+          <property name="rightMargin"><number>12</number></property>
+          <property name="bottomMargin"><number>14</number></property>
+          <property name="spacing"><number>0</number></property>
+          <item>
+           <widget class="QLabel" name="stat1Label">
+            <property name="text"><string>3D TERRAIN</string></property>
+            <property name="alignment"><set>Qt::AlignmentFlag::AlignCenter</set></property>
+            <property name="styleSheet"><string notr="true">QLabel { color: #4a90d9; font-size: 11px; font-weight: bold; letter-spacing: 2px; }</string></property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QFrame" name="div1">
+            <property name="maximumSize"><size><width>1</width><height>16777215</height></size></property>
+            <property name="styleSheet"><string notr="true">QFrame { background: #1a2a3a; border: none; }</string></property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="stat2Label">
+            <property name="text"><string>AI POWERED</string></property>
+            <property name="alignment"><set>Qt::AlignmentFlag::AlignCenter</set></property>
+            <property name="styleSheet"><string notr="true">QLabel { color: #4a90d9; font-size: 11px; font-weight: bold; letter-spacing: 2px; }</string></property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QFrame" name="div2">
+            <property name="maximumSize"><size><width>1</width><height>16777215</height></size></property>
+            <property name="styleSheet"><string notr="true">QFrame { background: #1a2a3a; border: none; }</string></property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="stat3Label">
+            <property name="text"><string>REAL-TIME</string></property>
+            <property name="alignment"><set>Qt::AlignmentFlag::AlignCenter</set></property>
+            <property name="styleSheet"><string notr="true">QLabel { color: #4a90d9; font-size: 11px; font-weight: bold; letter-spacing: 2px; }</string></property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+
+       <item>
+        <spacer name="sp3">
+         <property name="orientation"><enum>Qt::Orientation::Vertical</enum></property>
+         <property name="sizeHint" stdset="0"><size><width>0</width><height>40</height></size></property>
+        </spacer>
+       </item>
+
+       <item>
+        <widget class="QPushButton" name="startButton">
+         <property name="minimumSize"><size><width>0</width><height>52</height></size></property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton { background: qlineargradient(x1:0,y1:0,x2:1,y2:0, stop:0 #1565c0, stop:1 #2979ff); color: #ffffff; border: none; border-radius: 6px; font-size: 13px; font-weight: bold; letter-spacing: 3px; } QPushButton:hover { background: qlineargradient(x1:0,y1:0,x2:1,y2:0, stop:0 #1976d2, stop:1 #448aff); } QPushButton:pressed { background-color: #1565c0; }</string>
+         </property>
+         <property name="text"><string>LAUNCH SIMULATION</string></property>
+        </widget>
+       </item>
+
+       <item>
+        <spacer name="sp4">
+         <property name="orientation"><enum>Qt::Orientation::Vertical</enum></property>
+         <property name="sizeHint" stdset="0"><size><width>0</width><height>10</height></size></property>
+        </spacer>
+       </item>
+
+       <item>
+        <widget class="QPushButton" name="exitButton">
+         <property name="minimumSize"><size><width>0</width><height>42</height></size></property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton { background-color: transparent; color: #2a4a6a; border: 1px solid #1a2a3a; border-radius: 6px; font-size: 12px; font-weight: bold; letter-spacing: 3px; } QPushButton:hover { background-color: rgba(255,255,255,10); color: #4a7aaa; border-color: #2a4a6a; }</string>
+         </property>
+         <property name="text"><string>EXIT</string></property>
+        </widget>
+       </item>
+
+       <item>
+        <spacer name="sp5">
+         <property name="orientation"><enum>Qt::Orientation::Vertical</enum></property>
+         <property name="sizeHint" stdset="0"><size><width>0</width><height>14</height></size></property>
+        </spacer>
+       </item>
+
+       <item>
+        <widget class="QLabel" name="versionLabel">
+         <property name="text"><string>v1.0.0  ·  FloodForge  ·  Hackathon Edition 2026</string></property>
+         <property name="alignment"><set>Qt::AlignmentFlag::AlignCenter</set></property>
+         <property name="styleSheet">
+          <string notr="true">QLabel { color: #1a2a3a; font-size: 10px; letter-spacing: 1px; }</string>
+         </property>
+        </widget>
+       </item>
+
+      </layout>
+     </widget>
+    </item>
+
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusbar">
+   <property name="styleSheet">
+    <string notr="true">QStatusBar { background-color: #050810; color: #1a2a3a; border-top: 1px solid #0d1520; }</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
