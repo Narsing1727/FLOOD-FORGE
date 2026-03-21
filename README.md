@@ -940,13 +940,7 @@ Process:
 
 ## 🏆 Credits
 
-### Core Team
 
-| Name | Role |
-|---|---|
-| **[Your Name]** | Lead Developer — Simulation Engine, Qt Application, Azure Integration |
-| **[Team Member 2]** | AI / LLM Integration — Groq API, Prompt Engineering |
-| **[Team Member 3]** | GIS / Data Pipeline — GDAL, OpenTopography, Meteostat |
 
 ### APIs & Services
 
